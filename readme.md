@@ -48,7 +48,6 @@ Pimero tenemos un `Cluster`, que es como mi computadora, dentro del cluster tene
 
 ## RESUMEN:
 
-```bash
     Iniciar el proceso de Mongo `brew services start mongodb-community@5.0`
     Conectarse a sus bases de datos `mongo`
     Para salir de `mongo` puedes escribir `exit`
@@ -62,7 +61,6 @@ Pimero tenemos un `Cluster`, que es como mi computadora, dentro del cluster tene
     
 
 
-```
 
 El comando kill le dice a un ID de proceso que finalice.
 
