@@ -48,28 +48,17 @@ Pimero tenemos un `Cluster`, que es como mi computadora, dentro del cluster tene
 
 ## RESUMEN:
 
-    Iniciar el proceso de Mongo `brew services start mongodb-community@5.0`
-    Conectarse a sus bases de datos `mongo`
-    Para salir de `mongo` puedes escribir `exit`
-    Para mostrar Bases de datos `show dbs`
-    Para crear una base de datos `use nombre_base_datos`
-    Para crear una coleccion `db.createCollection('usuarios')`
-    Para saber donde estoy o en que base de datos `db`
-    Para insertar un dato en usuarios `db.usuarios.insertOne({name:'juan'})`
-    Para mostrar todos los documentos de la colección `db.usuarios.find()`
+Iniciar el proceso de Mongo `brew services start mongodb-community@5.0`
+Conectarse a sus bases de datos `mongo`
+Para salir de `mongo` puedes escribir `exit`
+Para mostrar Bases de datos `show dbs`
+Para crear una base de datos `use nombre_base_datos`
+Para crear una coleccion `db.createCollection('usuarios')`
+Para saber donde estoy o en que base de datos `db`
+Para insertar un dato en usuarios `db.usuarios.insertOne({name:'juan'})`
+Para mostrar todos los documentos de la colección `db.usuarios.find()`
 
     
 
 
 
-El comando kill le dice a un ID de proceso que finalice.
-
-
-
-
-
-
-
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
