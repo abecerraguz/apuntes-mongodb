@@ -9,13 +9,11 @@ Ejecute la terminal y luego escriba `brew tap mongodb/brew`, luego `brew install
 
 ## Ejecutando el servidor MongoDB
 
-```bash
-
 Escriba en la terminal `brew services start mongodb-community`
 
 Eso es. Si eso fue exitoso, el terminal debería llenarse con un montón de información y no debería poder ver la línea de aviso normal del terminal, solo un subrayado. Esto significa que su servidor está en funcionamiento. Lo que hemos hecho es ejecutar nuestro servidor de base de datos y, por lo tanto, abrir nuestras bases de datos MongoDB para conexiones, de modo que podamos consultar la base de datos y realizar operaciones CRUD.
 
-```
+
 
 ## Conéctese a su base de datos:
 
@@ -29,6 +27,7 @@ mongo
 Ahora debería ver que el cursor del terminal se convierte en una sola flecha y un pitido subrayado.
 
 ## Iniciar y detener el proceso:
+
 Para ejecutar MongoDB (es decir, el mongodproceso) manualmente como un proceso en segundo plano , ejecute:
 
 ```bash
