@@ -48,19 +48,90 @@ Pimero tenemos un `Cluster`, que es como mi computadora, dentro del cluster tene
 
 ## RESUMEN:
 
-```python
+```apuntes
     Iniciar el proceso de Mongo `brew services start mongodb-community@5.0`
+```
+
+```apuntes
     Conectarse a sus bases de datos `mongo`
+```
+
+```apuntes
     Para salir de `mongo` puedes escribir `exit`
+```
+
+```apuntes
     Para mostrar Bases de datos `show dbs`
+```
+
+```apuntes
     Para crear una base de datos `use nombre_base_datos`
+```
+
+```apuntes
     Para crear una coleccion `db.createCollection('usuarios')`
+```
+
+```apuntes
     Para saber donde estoy o en que base de datos `db`
+```
+
+```apuntes
     Para insertar un dato en usuarios `db.usuarios.insertOne({name:'juan'})`
+```
+
+```apuntes
     Para mostrar todos los documentos de la colección `db.usuarios.find()`
 ```
 
-    
+```apuntes
+    Para remover un dato especifico `db.usuarios.remove({name:'juan'})`
+```
+
+```apuntes
+    Buscar un usuario específico por su nombre `db.usuarios.find({name:'Juan'})`
+```
+
+```apuntes
+    Buscar por su ID `db.usuarios.find({_id : ObjectId('610fe70accb2a946c519f64f')})`
+```
+
+```apuntes
+    Actualizar datos buscado por el ID `db.usuarios.update({_id : ObjectId('')},{name:''})`
+```
+
+```apuntes
+    Actualizar datos buscado por el ID y agregando un valor `db.usuarios.update({_id : ObjectId('610feed32356378c262f9e8b')},{$set:{'apellido':'Valdez'}})`
+```
+
+```apuntes
+    Para borrar una colección Importante si se borra la colección se borra la Base de datos `db.usuarios.drop()`
+```
+
+```apuntes
+    Para mostrar las colecciones `show collections`
+```
+
+```apuntes
+    Para mostrar las BD `show dbs`
+```
+
+```apuntes
+    Para buscar datos en una colección `db.usuarios.find()`
+```
+
+```apuntes
+```
+
+```apuntes
+    Buscar entre rango `db.usuarios.find({edad:{$in:[20,60]}})`
+```
+
+```apuntes
+    Buscar fuera del rango `db.usuarios.find({edad:{$noin:[20,60]}})`
+```
+
+
 
 
 
