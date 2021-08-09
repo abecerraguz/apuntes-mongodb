@@ -48,8 +48,9 @@ Pimero tenemos un `Cluster`, que es como mi computadora, dentro del cluster tene
 
 ## RESUMEN:
 
+Iniciar el proceso de Mongo 
 ```apuntes
-    Iniciar el proceso de Mongo `brew services start mongodb-community@5.0`
+    brew services start mongodb-community@5.0
 ```
 
 ```apuntes
