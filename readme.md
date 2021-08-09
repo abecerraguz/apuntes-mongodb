@@ -48,88 +48,85 @@ Pimero tenemos un `Cluster`, que es como mi computadora, dentro del cluster tene
 
 ## RESUMEN:
 
-Iniciar el proceso de Mongo 
+Iniciar el proceso de Mongo:
 ```apuntes
     brew services start mongodb-community@5.0
 ```
-
+Conectarse a sus bases de datos:
 ```apuntes
-    Conectarse a sus bases de datos `mongo`
+    mongo
 ```
-
+Para salir de `mongo` puedes escribir :
 ```apuntes
-    Para salir de `mongo` puedes escribir `exit`
+    exit
 ```
-
+ Para mostrar Bases de datos:
 ```apuntes
-    Para mostrar Bases de datos `show dbs`
+    show dbs
 ```
-
+Para crear una base de datos: 
 ```apuntes
-    Para crear una base de datos `use nombre_base_datos`
+    use nombre_base_datos
 ```
-
+Para crear una coleccion: 
 ```apuntes
-    Para crear una coleccion `db.createCollection('usuarios')`
+    db.createCollection('usuarios')
 ```
-
+Para saber donde estoy o en que base de datos:
 ```apuntes
-    Para saber donde estoy o en que base de datos `db`
+     db
 ```
-
+Para insertar un dato en usuarios:
 ```apuntes
-    Para insertar un dato en usuarios `db.usuarios.insertOne({name:'juan'})`
+     db.usuarios.insertOne({name:'juan'})
 ```
-
+Para mostrar todos los documentos de la colección:
 ```apuntes
-    Para mostrar todos los documentos de la colección `db.usuarios.find()`
+     db.usuarios.find()
 ```
-
+Para remover un dato especifico: 
 ```apuntes
-    Para remover un dato especifico `db.usuarios.remove({name:'juan'})`
+    db.usuarios.remove({name:'juan'})
 ```
-
+Buscar un usuario específico por su nombre:
 ```apuntes
-    Buscar un usuario específico por su nombre `db.usuarios.find({name:'Juan'})`
+    db.usuarios.find({name:'Juan'})
 ```
-
+Buscar por su ID:
 ```apuntes
-    Buscar por su ID `db.usuarios.find({_id : ObjectId('610fe70accb2a946c519f64f')})`
+    db.usuarios.find({_id : ObjectId('610fe70accb2a946c519f64f')})
 ```
-
+Actualizar datos buscado por el ID 
 ```apuntes
-    Actualizar datos buscado por el ID `db.usuarios.update({_id : ObjectId('')},{name:''})`
+    db.usuarios.update({_id : ObjectId('')},{name:''})
 ```
-
+   Actualizar datos buscado por el ID y agregando un valor:
 ```apuntes
-    Actualizar datos buscado por el ID y agregando un valor `db.usuarios.update({_id : ObjectId('610feed32356378c262f9e8b')},{$set:{'apellido':'Valdez'}})`
+  db.usuarios.update({_id : ObjectId('610feed32356378c262f9e8b')},{$set:{'apellido':'Valdez'}})
 ```
-
+Para borrar una colección, Importante si se borra la colección se borra la Base de datos: 
 ```apuntes
-    Para borrar una colección Importante si se borra la colección se borra la Base de datos `db.usuarios.drop()`
+    db.usuarios.drop()
 ```
-
+Para mostrar las colecciones:
 ```apuntes
-    Para mostrar las colecciones `show collections`
+    show collections
 ```
-
+Para mostrar las BD:
 ```apuntes
-    Para mostrar las BD `show dbs`
+    show dbs
 ```
-
+ Para buscar datos en una colección:
 ```apuntes
-    Para buscar datos en una colección `db.usuarios.find()`
+   db.usuarios.find()
 ```
-
+Buscar entre rango:
 ```apuntes
+    db.usuarios.find({edad:{$in:[20,60]}})
 ```
-
+Buscar fuera del rango:
 ```apuntes
-    Buscar entre rango `db.usuarios.find({edad:{$in:[20,60]}})`
-```
-
-```apuntes
-    Buscar fuera del rango `db.usuarios.find({edad:{$noin:[20,60]}})`
+    db.usuarios.find({edad:{$noin:[20,60]}})
 ```
 
 
